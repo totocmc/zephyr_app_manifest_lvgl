@@ -1,0 +1,1 @@
+# zephyr_app_manifest_lvgl
