@@ -1,0 +1,24 @@
+manifest:
+  remotes:
+    - name: zephyrproject
+      url-base: https://github.com/zephyrproject-rtos
+    - name: my_app
+      url-base: https://github.com/totocmc
+  projects:
+    - name: zephyr
+      repo-path: zephyr
+      remote: zephyrproject
+      revision: v4.3.0
+      clone-depth: 1
+      import:
+        path-prefix: external
+        name-allowlist:
+          - cmsis_6
+          - picolibc
+          - segger
+          - hal_stm32
+          - lvgl
+    - name: zephyr_lvgl_app
+      repo-path: app
+      remote: my_app
+      revision: main
