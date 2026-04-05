@@ -18,7 +18,7 @@ manifest:
           - segger
           - hal_stm32
           - lvgl
-    - name: zephyr_lvgl_app
-      repo-path: app
+    - name: app
+      repo-path: zephyr_lvgl_app
       remote: my_app
       revision: main
